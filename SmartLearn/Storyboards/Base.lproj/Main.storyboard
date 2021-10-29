@@ -33,17 +33,17 @@
                     <navigationItem key="navigationItem" id="rhL-NJ-f1U"/>
                     <connections>
                         <outlet property="textToLearn" destination="EaX-uv-xxJ" id="VXU-mA-kzR"/>
-                        <segue destination="oSI-LL-yor" kind="show" id="F6l-AP-Zae"/>
+                        <segue destination="oSI-LL-yor" kind="show" identifier="toText" id="F6l-AP-Zae"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="67.633928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Text View Controller-->
         <scene sceneID="eOJ-Qu-EaE">
             <objects>
-                <viewController id="oSI-LL-yor" sceneMemberID="viewController">
+                <viewController id="oSI-LL-yor" customClass="TextViewController" customModule="SmartLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UQW-fK-r7w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
