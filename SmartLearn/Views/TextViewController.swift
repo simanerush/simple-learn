@@ -10,11 +10,18 @@ import UIKit
 
 class TextViewController: UIViewController {
     
+    @IBOutlet weak var receivedTextLabel: UILabel!
+    
     // The text received from the previous controller
-    var receivedText: String = "Text"
+    var receivedText: String?
     
     override func viewDidLoad() {
-        print(receivedText)
         super.viewDidLoad()
+        
+        if let receivedText = receivedText {
+            receivedTextLabel.text = receivedText
+        } else {
+            receivedTextLabel.text = "No text received"
+        }
     }
 }

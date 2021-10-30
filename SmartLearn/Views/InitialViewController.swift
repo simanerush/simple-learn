@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  InitialViewController.swift
 //  SmartLearn
 //
 //  Created by Serafima on 10/27/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class InitialViewController: UIViewController {
     
     @IBOutlet weak var textToLearn: UITextField!
     
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITextFieldDelegate {
+extension InitialViewController: UITextFieldDelegate {
     
     // A function to identify if the textField is empty
     func textFieldDidEndEditing(_ textField: UITextField) {
