@@ -24,4 +24,12 @@ class TextViewController: UIViewController {
             receivedTextLabel.text = "No text received"
         }
     }
+    
+    func getSentences(text: String) -> [String] {
+        var sentences: [String] = []
+        text.enumerateSubstrings(in: text.startIndex..., options: [.localized, .bySentences]) { (tag, _, _, _) in
+            sentences.append(tag ?? "")
+        }
+        return sentences
+    }
 }
