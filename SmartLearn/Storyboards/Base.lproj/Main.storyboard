@@ -64,7 +64,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="P5d-qh-LO9"/>
                     <connections>
-                        <outlet property="receivedTextLabel" destination="pzc-Dh-YhT" id="8QV-E2-5pX"/>
+                        <outlet property="sentenceLabel" destination="pzc-Dh-YhT" id="SqP-Xo-0uv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FL0-He-eHq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

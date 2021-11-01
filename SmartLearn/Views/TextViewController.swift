@@ -10,7 +10,7 @@ import UIKit
 
 class TextViewController: UIViewController {
     
-    @IBOutlet weak var receivedTextLabel: UILabel!
+    @IBOutlet weak var sentenceLabel: UILabel!
     
     // The text received from the previous controller
     var receivedText: String?
@@ -19,9 +19,10 @@ class TextViewController: UIViewController {
         super.viewDidLoad()
         
         if let receivedText = receivedText {
-            receivedTextLabel.text = receivedText
+            let result = getSentences(text: receivedText)
+            sentenceLabel.text = result[0] + result [2]
         } else {
-            receivedTextLabel.text = "No text received"
+            sentenceLabel.text = "No text received"
         }
     }
     
